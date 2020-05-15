@@ -44,7 +44,7 @@ body {
 .header-welcome {
     height: 100vmax;
     width: 100%;
-    background-image: url(https://wallpaperplay.com/walls/full/3/7/0/23093.jpg);
+    background-image: url(https://res.cloudinary.com/scrumpylungs/image/upload/v1589568598/freeCodeCamp-personal-portfolio/welcome-background_svhpgm.jpg);
     background-size: cover;
     background-position: center center;
     border-bottom: 5px solid var(--main-color);
