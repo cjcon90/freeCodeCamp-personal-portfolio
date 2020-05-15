@@ -437,9 +437,9 @@ body {
 
 
         .title {
-            font-size: 2.5em;
+            font-size: 2.2em;
             max-width: 650px;
-            top: 20vh;
+            top: 15vh;
 
         }
 
@@ -447,19 +447,19 @@ body {
             left: 20px;
             width: 80%;
             max-width: 600px;
-            top: 23vh;
+            top: 18vh;
             padding-top: 40px;
         }
 
         .subtitle {
-            font-size: 2em;
+            font-size: 1.7em;
             padding: 5px;
             color: var(--light);
         }
 
 
         #welcome {
-            font-size: 3em;
+            font-size: 2.5em;
         }
 
 
