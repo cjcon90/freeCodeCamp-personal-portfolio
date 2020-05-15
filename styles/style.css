@@ -473,8 +473,8 @@ body {
             grid-template-columns: 1fr 1fr;
             align-content: center;
             margin: auto;
-            width: 90%;
-            gap: 75px
+            width: 92%;
+            gap: 50px;
         }
 
 
