@@ -1,0 +1,564 @@
+:root {
+    --dark: rgb(22, 22, 23);
+    --main-color: rgb(224, 100, 28);
+    --light: rgb(214, 206, 206);
+
+}
+
+
+
+
+/* Base Formatting */
+
+body {
+    background-color: var(--light);
+}
+
+
+
+
+/* Navbar Base Formatting */
+.navbar {
+    background-color: var(--main-color);
+    position: sticky;
+    top: 0;
+    display: flex;
+    flex-direction: row;
+    z-index: 999;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: var(--dark);
+    font-family: 'Josefin Sans', sans-serif;
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+
+
+
+
+
+/* Welcome page Base Formatting */
+
+.header-welcome {
+    height: 100vh;
+    width: 100%;
+    background-image: url(https://wallpaperplay.com/walls/full/3/7/0/23093.jpg);
+    background-size: cover;
+    background-position: center center;
+    border-bottom: 5px solid var(--main-color);
+}
+
+.title {
+    font-family: 'Cousine', monospace;
+    color: var(--text-title);
+    position: relative;
+    margin: auto;
+    width: 90%;
+    max-width: 600px;
+    top: 20vh;
+    padding: 5px;
+
+}
+
+.subtitle-div {
+    font-family: 'Cousine', monospace;
+    color: var(--text-title);
+    ;
+    position: relative;
+    margin: auto;
+    text-align: left;
+    width: 80%;
+    max-width: 500px;
+    top: 20vh;
+    padding-top: 40px;
+}
+
+
+
+
+
+
+/* Project Section base Formatting */
+
+.main-projects {
+    background-color: var(--light);
+    margin: 0;
+
+}
+
+.section-title {
+    max-width: 100%;
+    font-family: 'Josefin Sans', sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--dark);
+    text-shadow: 1.75px 1.75px var(--main-color);
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+
+.tile-div {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    align-content: center;
+    width: 100%;
+    gap: 100px
+}
+
+.project-tile {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--dark);
+    border-bottom: 5px solid var(--main-color);
+    border-top: 5px solid var(--main-color);
+
+}
+
+.project-title {
+    color: var(--main-color);
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+
+.project-img {
+    display: block;
+    margin: auto;
+    border-top: 5px solid var(--main-color);
+    padding-bottom: 20px;
+    width: 80%;
+    background-color: var(--dark);
+}
+
+.project-img:hover,
+.project-img:active {
+    filter: none;
+}
+
+
+
+
+
+
+/* Contact Section Base Formatting */
+
+
+.contact-section {
+    background-color: var(--dark);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-bottom: 5px solid var(--main-color);
+}
+
+.contact-link {
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+
+}
+
+.contact-text {
+    font-family: 'Josefin Sans', sans-serif;
+    color: var(--light);
+    margin: auto;
+}
+
+
+
+/* Mobile Sizing & Structure */
+
+
+
+
+
+/* Mobile Navbar Sizing & Structure */
+.navbar {
+    justify-content: space-around;
+}
+
+.nav-item {
+    padding: 20px;
+}
+
+.nav-link {
+    font-size: 1.4em;
+}
+
+
+
+/* Mobile Welcome Sizing & Structure */
+
+.subtitle {
+    font-size: 1.2em;
+    padding: 5px;
+    color: var(--light);
+}
+
+#welcome0 {
+    text-align: left;
+    color: var(--main-color)
+}
+
+#welcome {
+    text-align: center;
+    font-size: 1.65em;
+    color: var(--light);
+}
+
+#welcome2 {
+    text-align: right;
+    color: var(--main-color)
+}
+
+#sub2,
+#sub3,
+#sub4 {
+    padding-left: 40px;
+    color: var(--main-color)
+}
+
+
+
+
+
+/* Mobile Project Section Sizing & Structure */
+
+.section-title {
+    padding-bottom: 25px;
+    font-size: 3rem;
+}
+
+.project-title {
+    font-size: 2.5em;
+
+}
+
+#projects {
+    padding-top: 75px;
+}
+
+
+
+
+
+/* Mobile Contact Section Sizing & Structure */
+
+#contact {
+    padding-top: 75px;
+}
+
+.contact-section {
+    background-color: var(--dark);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-bottom: 5px solid var(--main-color);
+}
+
+.contact-div {
+    border-top: 5px solid var(--main-color);
+    padding: 40px 10px 40px 10px;
+}
+
+.contact-text {
+    font-size: 2em;
+}
+
+.contact-img {
+    width: 30%;
+    height: auto;
+}
+
+
+
+
+
+/* Tablet Sizing and Structure */
+
+@media only screen and (min-width: 600px) {
+
+
+    /* Tablet Navbar Sizing & Structure */
+    .navbar {
+        justify-content: space-around;
+    }
+
+    .nav-item {
+        padding: 25px;
+    }
+
+    .nav-link {
+        font-size: 1.6em;
+    }
+
+
+    /* Tablet Welcome Sizing & Structure */
+
+
+
+    .title {
+        font-size: 1.7em;
+        max-width: 500px;
+        top: 20vh;
+
+    }
+
+    .subtitle-div {
+        left: 20px;
+        width: 80%;
+        max-width: 500px;
+        top: 23vh;
+        padding-top: 40px;
+    }
+
+    .subtitle {
+        font-size: 1.5em;
+        padding: 5px;
+        color: var(--light);
+    }
+
+
+    #welcome {
+        font-size: 1.9em;
+    }
+
+
+
+
+    /* Tablet Project Section Sizing & Structure */
+
+
+    .section-title {
+        padding-bottom: 30px;
+        font-size: 4rem;
+    }
+
+    .project-title {
+        font-size: 2.5em;
+        padding: 15px;
+    }
+
+    #projects {
+        margin-top: -30px;
+        padding-top: 90px;
+    }
+
+    .project-tile {
+        margin: auto;
+        max-width: 75%;
+        border: 5px solid var(--main-color);
+        border-radius: 20px;
+        box-shadow: 7px 7px 7px 7px grey;
+    }
+
+    .project-img {
+        width: 60%;
+        padding-bottom: 50px;
+    }
+
+
+
+
+
+    /* Tablet Contact Section Sizing & Structure */
+
+    #contact {
+        padding-top: 75px;
+    }
+
+    .contact-section {
+        background-color: var(--dark);
+        border-bottom: 5px solid var(--main-color);
+    }
+
+    .contact-div {
+        border-top: 4px solid var(--main-color);
+        padding: 40px 10px 40px 10px;
+    }
+
+    .contact-link {
+        margin: auto;
+        max-width: 50%;
+    }
+
+
+    .contact-text {
+        font-size: 2em;
+    }
+
+    .contact-img {
+        width: 20%;
+        height: auto;
+    }
+
+
+
+
+
+
+    /* Desktop Sizing and Structure */
+
+    @media only screen and (min-width: 900px) {
+
+
+        /* Desktop Navbar Sizing & Structure */
+
+        .navbar {
+            justify-content: space-around;
+        }
+
+        .nav-item {
+            padding: 25px;
+        }
+
+        .nav-link {
+            font-size: 1.8em;
+        }
+
+
+        /* Desktop Welcome Sizing & Structure */
+
+
+
+        .title {
+            font-size: 2.2em;
+            max-width: 600px;
+            top: 20vh;
+
+        }
+
+        .subtitle-div {
+            left: 20px;
+            width: 80%;
+            max-width: 500px;
+            top: 23vh;
+            padding-top: 40px;
+        }
+
+        .subtitle {
+            font-size: 1.5em;
+            padding: 5px;
+            color: var(--light);
+        }
+
+
+        #welcome {
+            font-size: 2.5em;
+        }
+
+
+
+
+        /* Desktop Project Section Sizing & Structure */
+
+
+        .tile-div {
+            display: grid;
+            grid-template-rows: 1fr 1fr;
+            grid-template-columns: 1fr 1fr;
+            align-content: center;
+            margin: auto;
+            width: 90%;
+            gap: 75px
+        }
+
+
+        .section-title {
+            font-size: 4rem;
+            margin: 50px;
+        }
+
+
+        .project-title {
+            font-size: 2.5em;
+            padding: 0;
+        }
+
+        #projects {
+            margin-top: -30px;
+            padding-top: 100px;
+        }
+
+        .project-tile {
+            margin: auto;
+            max-width: 75%;
+            border: 5px solid var(--main-color);
+            border-radius: 20px;
+            box-shadow: 7px 7px 7px 7px grey;
+        }
+
+        .project-img {
+            width: 60%;
+            padding-bottom: 50px;
+        }
+
+
+
+
+
+        /* Desktop Contact Section Sizing & Structure */
+
+        #contact {
+            padding-top: 75px;
+        }
+
+
+        .contact-section {
+            flex-direction: row;
+            background-color: var(--dark);
+            border-bottom: 5px solid var(--main-color);
+        }
+
+        .contact-div {
+            border-top: 4px solid var(--main-color);
+            padding: 40px 10px 40px 10px;
+            max-width: 33%;
+        }
+
+
+        .contact-link {
+            margin: auto;
+            max-width: 50%;
+        }
+
+
+        .contact-text {
+            font-size: 2em;
+        }
+
+        .contact-img {
+            width: 20%;
+            height: auto;
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    }
